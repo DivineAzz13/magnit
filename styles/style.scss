@@ -312,7 +312,7 @@ body {
 	background-size: cover;
 	@media (max-width: 500px) {
 		padding-top: 63px;
-		max-height: 610px;
+		min-height: 610px;
 	}
 }
 
@@ -431,7 +431,7 @@ body {
 	background-color: $mainBg;
 	min-height: 338px;
 	width: 100%;
-	padding: 38px 0;
+	padding: 38px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -501,6 +501,12 @@ body {
     background-position: bottom 15px left 70px;
     background-size: 79%;
 	}
+	@media (max-width: 500px) {
+		padding: 0;
+		padding-top: 30px;
+		background-position: left 6px bottom 13px;
+    background-size: 94%;
+	}
 
 	&__wrapper {
 		flex-direction: row;
@@ -512,7 +518,7 @@ body {
 			min-height: 250px;
 		}
 		@media (max-width: 500px) {
-			max-height: 222px;
+			min-height: 190px;
 		}
 	}
 
@@ -558,6 +564,11 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+		@media(max-width: 500px) {
+			padding-top: 30px;
+			gap: 22px;
+
+		}
 	}
 
 	&__copyrights {
