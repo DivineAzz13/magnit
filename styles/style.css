@@ -366,7 +366,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   border-radius: 20px;
-  padding: 20px 0 43px;
+  padding: 75px 0 43px;
   background: #fff3da;
 }
 @media (max-width: 1200px) {
@@ -471,6 +471,10 @@ body {
   .subscription-top {
     padding-top: 63px;
     min-height: 610px;
+  }
+}
+@media (max-width: 360px) {
+  .subscription-top {
     background-image: url("../assets/img/phone-bg.png");
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -632,7 +636,7 @@ body {
   background-image: url("../assets/img/fruits-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 40%;
 }
 @media (max-width: 992px) {
   .about {
