@@ -170,7 +170,6 @@ body {
   font-family: "Magnit Sans", sans-serif;
   background-color: #fff;
   width: 100%;
-  max-width: 1440px;
   min-width: 360px;
   margin: 0 auto;
   background-color: #fff;
@@ -311,33 +310,33 @@ body {
   }
 }
 .header__btns-holder {
-  width: 100%;
-  max-width: 300px;
+  width: fit;
+  align-items: center;
   gap: 18px;
 }
-.navigation {
+.promo {
   margin-bottom: 50px;
 }
 @media (max-width: 992px) {
-  .navigation {
+  .promo {
     margin-bottom: 0;
   }
 }
-.navigation__nav {
+.promo__wrapper {
   width: 100%;
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 @media (max-width: 992px) {
-  .navigation__nav {
+  .promo__wrapper {
     flex-direction: column;
     gap: 57px;
   }
 }
-.navigation-nav-link {
+.promo-box {
   position: relative;
   width: 100%;
   max-width: 370px;
@@ -347,17 +346,17 @@ body {
   align-items: flex-end;
   justify-content: center;
   border-radius: 20px;
-  padding-bottom: 43px;
+  padding: 20px 0 43px;
   background: #fff3da;
 }
 @media (max-width: 1200px) {
-  .navigation-nav-link {
+  .promo-box {
     max-width: 320px;
     min-height: 123px;
     padding-bottom: 28px;
   }
 }
-.navigation-nav-link__icon-holder {
+.promo-box__icon-holder {
   position: absolute;
   top: 25px;
   left: 50%;
@@ -367,17 +366,17 @@ body {
   height: 98px;
 }
 @media (max-width: 1200px) {
-  .navigation-nav-link__icon-holder {
+  .promo-box__icon-holder {
     max-width: 76px;
     height: 78px;
     top: 15px;
   }
 }
-.navigation-nav-link__img {
+.promo-box__img {
   width: 100%;
   height: 100%;
 }
-.navigation-nav-link__label {
+.promo-box__label {
   color: #121212;
   font-family: "Magnit Sans", sans-serif;
   font-size: 18px;
@@ -396,6 +395,7 @@ body {
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 18px;
+  text-align: center;
 }
 @media (max-width: 992px) {
   .subscription__title {
@@ -563,6 +563,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: space-between;
+  gap: 16px;
 }
 @media (max-width: 992px) {
   .qr {
@@ -601,7 +602,7 @@ body {
 
 .about {
   background-color: #f13e33;
-  min-height: 160px;
+  padding: 42px 0;
   background-image: url("../assets/img/fruits-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -609,21 +610,19 @@ body {
 }
 @media (max-width: 992px) {
   .about {
-    background-position: center bottom;
-    background-size: 85%;
+    background-position: bottom 15px left 70px;
+    background-size: 79%;
   }
 }
 .about__wrapper {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 42px;
 }
 @media (max-width: 992px) {
   .about__wrapper {
-    height: 334px;
     align-items: start;
-    padding-top: 43px;
+    min-height: 250px;
   }
 }
 @media (max-width: 500px) {

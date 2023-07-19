@@ -19,7 +19,6 @@ body {
 	font-family: $mainFont;
 	background-color: $white;
 	width: 100%;
-	max-width: 1440px;
 	min-width: 360px;
 	margin: 0 auto;
 	background-color: $white;
@@ -152,8 +151,8 @@ body {
 	}
 
 	&__btns-holder {
-		width: 100%;
-		max-width: 300px;
+		width: fit;
+		align-items: center;
 		gap: 18px;
 	}
 
@@ -161,20 +160,15 @@ body {
 	}
 }
 
-.main {
-}
-.navigation {
+.promo {
 	margin-bottom: 50px;
 	@media (max-width: 992px) {
 		margin-bottom: 0;
 	}
 
 	&__wrapper {
-	}
-
-	&__nav {
 		width: 100%;
-		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
@@ -186,11 +180,25 @@ body {
 		}
 	}
 
-	&__nav-link {
+	// &__nav {
+	// 	width: 100%;
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// 	gap: 30px;
+
+	// 	@media (max-width: 992px) {
+	// 		flex-direction: column;
+	// 		gap: 57px;
+	// 	}
+	// }
+
+	&__box{
 	}
 }
 
-.navigation-nav-link {
+.promo-box{
 	position: relative;
 	width: 100%;
 	max-width: 370px;
@@ -200,7 +208,7 @@ body {
 	align-items: flex-end;
 	justify-content: center;
 	border-radius: 20px;
-	padding-bottom: 43px;
+	padding: 20px 0 43px;
 	background: $mainBg;
 	@media (max-width: 1200px) {
 		max-width: 320px;
@@ -252,6 +260,7 @@ body {
 		font-weight: 700;
 		line-height: 40px;
 		margin-bottom: 18px;
+		text-align: center;
 		@media (max-width: 992px) {
 			font-size: 32px;
 		}
@@ -441,6 +450,7 @@ body {
 	display: flex;
 	text-align: center;
 	justify-content: space-between;
+	gap: 16px;
 
 	@media (max-width: 992px) {
 		display: none;
@@ -482,25 +492,24 @@ body {
 
 .about {
 	background-color: $footerBg;
-	min-height: 160px;
+	padding: 42px 0;
 	background-image: url("../assets/img/fruits-bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	@media (max-width: 992px) {
-		background-position: center bottom;
-		background-size: 85%;
+    background-position: bottom 15px left 70px;
+    background-size: 79%;
 	}
 
 	&__wrapper {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		padding-top: 42px;
+
 		@media (max-width: 992px) {
-			height: 334px;
 			align-items: start;
-			padding-top: 43px;
+			min-height: 250px;
 		}
 		@media (max-width: 500px) {
 			max-height: 222px;
