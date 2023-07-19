@@ -1,0 +1,704 @@
+@font-face {
+  font-family: "Magnit Box";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Magnit_Box-Bold_Update_May_2023/Magnit_Box-Bold_Update_WEB/Magnit_Box-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Magnit Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/Magnit_Release_2803-2023/Magnit_Sans-n-Condensed/Magnit-Sans_WEB/MagnitSans-Regular/MagnitSans-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Magnit Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/Magnit_Release_2803-2023/Magnit_Sans-n-Condensed/Magnit-Sans_WEB/MagnitSans-Medium/MagnitSans-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Magnit Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/Magnit_Release_2803-2023/Magnit_Sans-n-Condensed/Magnit-Sans_WEB/MagnitSans-Bold/MagnitSans-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Magnit Sans", sans-serif;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+.logo-link {
+  width: 100%;
+  max-width: 144px;
+  max-height: 36px;
+}
+
+.title {
+  max-width: 445px;
+  font-family: "Magnit Box", sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.text {
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+
+.btns-holder {
+  display: flex;
+}
+
+.social-btn {
+  width: 100%;
+  border: none;
+  padding: 14px 43px;
+  color: #fff;
+  text-align: center;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 12px;
+}
+.social-btn--telegram {
+  background-color: #2aabee;
+}
+.social-btn--viber {
+  background-color: #7360f2;
+}
+
+.header {
+  background-color: #fff3da;
+  min-height: 532px;
+  background-image: url("../assets/img/bg-img-desktop.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 88px;
+}
+@media (max-width: 1200px) {
+  .header {
+    background-size: 60%;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    min-height: 917px;
+    background-image: url("../assets/img/bg-img-tablet.png");
+    background-position: center bottom;
+    background-size: contain;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    min-height: 570px;
+    margin-bottom: 65px;
+    background-image: url("../assets/img/bg-img-mobile.png");
+  }
+}
+.header__wrapper {
+  padding-top: 40px;
+}
+.header__logo {
+  margin-bottom: 76px;
+}
+@media (max-width: 500px) {
+  .header__logo {
+    margin-bottom: 40px;
+  }
+}
+.header__title {
+  margin-bottom: 12px;
+  color: #ed0e00;
+}
+@media (max-width: 992px) {
+  .header__title {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .header__title {
+    font-size: 30px;
+  }
+}
+.header__text {
+  color: #ed0e00;
+  max-width: 440px;
+}
+@media (max-width: 500px) {
+  .header__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+}
+.header__btns-holder {
+  width: 100%;
+  max-width: 300px;
+  gap: 18px;
+}
+.navigation {
+  margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+  .navigation {
+    margin-bottom: 0;
+  }
+}
+.navigation__nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .navigation__nav {
+    flex-direction: column;
+    gap: 57px;
+  }
+}
+.navigation-nav-link {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  min-height: 164px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 20px;
+  padding-bottom: 43px;
+  background: #fff3da;
+}
+@media (max-width: 1200px) {
+  .navigation-nav-link {
+    max-width: 320px;
+    min-height: 123px;
+    padding-bottom: 28px;
+  }
+}
+.navigation-nav-link__icon-holder {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 94px;
+  height: 98px;
+}
+@media (max-width: 1200px) {
+  .navigation-nav-link__icon-holder {
+    max-width: 76px;
+    height: 78px;
+    top: 15px;
+  }
+}
+.navigation-nav-link__img {
+  width: 100%;
+  height: 100%;
+}
+.navigation-nav-link__label {
+  color: #121212;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.subscription__wrapper {
+  align-items: center;
+}
+.subscription__title {
+  color: #121212;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+@media (max-width: 992px) {
+  .subscription__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .subscription__title {
+    font-size: 24px;
+    line-height: 29.5px;
+  }
+}
+@media (max-width: 500px) {
+  .subscription__title {
+    margin-bottom: 12px;
+  }
+}
+.subscription__text {
+  max-width: 701px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .subscription__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.subscription__btns-holder {
+  width: 100%;
+  max-width: 670px;
+  gap: 30px;
+}
+@media (max-width: 500px) {
+  .subscription__btns-holder {
+    flex-direction: column;
+  }
+}
+.subscription-top {
+  width: 100%;
+  min-height: 636px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 93px;
+  padding-bottom: 37px;
+  background-image: url("../assets/img/like-bg-cutted.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  .subscription-top {
+    padding-top: 63px;
+    max-height: 610px;
+  }
+}
+
+.notifications-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  margin-top: auto;
+}
+
+.notification {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 20px;
+  padding: 0 16px 10px;
+}
+.notification__telegram {
+  min-height: 121px;
+  background: linear-gradient(180deg, #ebf8ff 0%, #cdeafa 100%);
+  box-shadow: 0px 0px 16.7371463776px 0px rgba(0, 0, 0, 0.14);
+  padding-top: 12px;
+}
+.notification__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 7px;
+}
+.notification__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.notification__logo--telegram {
+  color: #2aabee;
+}
+.notification__time {
+  position: relative;
+  color: #777;
+}
+.notification__time::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #777;
+}
+.notification__title {
+  color: #121212;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.notification__title--telegram {
+  line-height: 23.266px;
+}
+.notification__text {
+  color: #121212;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.notification__viber {
+  min-height: 111px;
+  background: linear-gradient(180deg, #f4f2ff 0%, #ddd8fd 100%);
+  box-shadow: 0px 0px 15.3022556305px 0px rgba(0, 0, 0, 0.14);
+  padding-top: 9px;
+}
+.notification__logo--viber {
+  color: #7360f2;
+}
+.notification__title--viber {
+  line-height: 21.271px;
+}
+.subscription-bottom {
+  background-color: #fff3da;
+  min-height: 338px;
+  width: 100%;
+  padding: 38px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 992px) {
+  .subscription-bottom {
+    min-height: 128px;
+  }
+}
+@media (max-width: 500px) {
+  .subscription-bottom {
+    min-height: 209px;
+  }
+}
+
+.qr {
+  width: 100%;
+  max-width: 510px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .qr {
+    display: none;
+  }
+}
+
+.qr-box {
+  width: 100%;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.qr-box__img-holder {
+  width: 100%;
+  max-width: 160px;
+  max-height: 160px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.qr-box__img {
+  width: 100%;
+  height: 100%;
+}
+.qr-box__label {
+  color: #9a9a9a;
+  text-align: center;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about {
+  background-color: #f13e33;
+  min-height: 160px;
+  background-image: url("../assets/img/fruits-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 992px) {
+  .about {
+    background-position: center bottom;
+    background-size: 85%;
+  }
+}
+.about__wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 42px;
+}
+@media (max-width: 992px) {
+  .about__wrapper {
+    height: 334px;
+    align-items: start;
+    padding-top: 43px;
+  }
+}
+@media (max-width: 500px) {
+  .about__wrapper {
+    max-height: 222px;
+  }
+}
+.about__slogan {
+  width: 100%;
+  max-width: 235px;
+  max-height: 75px;
+}
+@media (max-width: 500px) {
+  .about__slogan {
+    max-width: 163px;
+    max-height: 52px;
+  }
+}
+.about__slogan-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .about__logo {
+    display: none;
+  }
+}
+.about__logo-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about__logo-mobile {
+    display: block;
+    width: 44px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__copyrights {
+  max-width: 1150px;
+  color: #9a9a9a;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer__copyrights-link {
+  text-decoration: underline;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+}
+.footer-nav__link {
+  color: #121212;
+  text-align: center;
+  font-family: "Magnit Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Magnit</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <a href="#" class="logo-link header__logo">
+        <svg width="144" height="36">
+          <use xlink:href="./assets/icons/header-logo.svg#header-logo"></use>
+        </svg>
+      </a>
+      <h1 class="title header__title">Будьте в курсе
+        первыми</h1>
+      <p class="text header__text">В наших чатах — скидки, акции и промокоды.<br>
+        Быть нашим подписчиком удобно и выгодно.</p>
+      <div class="btns-holder header__btns-holder">
+        <button class="social-btn social-btn--telegram header__social-btn" type="button">Telegram</button>
+        <button class="social-btn social-btn--viber header__social-btn" type="button">Viber</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="navigation">
+      <div class="wrapper navigation__wrapper">
+        <nav class="navigation__nav">
+          <a href="#" class="navigation__nav-link navigation-nav-link">
+            <div class="navigation-nav-link__icon-holder">
+              <img class="navigation-nav-link__img" src="./assets/img/peach.png" alt="A picture of peach.">
+            </div>
+            <span class="navigation-nav-link__label">Акции и скидки</span>
+          </a>
+          <a href="#" class="navigation__nav-link navigation-nav-link">
+            <div class="navigation-nav-link__icon-holder">
+              <img class="navigation-nav-link__img" src="./assets/img/box.png" alt="A picture of peach.">
+            </div>
+            <span class="navigation-nav-link__label">Персональные предложения</span>
+          </a>
+          <a href="#" class="navigation__nav-link navigation-nav-link">
+            <div class="navigation-nav-link__icon-holder">
+              <img class="navigation-nav-link__img" src="./assets/img/smiling-face.png" alt="A picture of peach.">
+            </div>
+            <span class="navigation-nav-link__label">Уникальные промокоды</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <div class="wrapper subscription__wrapper">
+        <div class="subscription-top">
+          <h2 class="title subscription__title">Лайк за подписку</h2>
+          <p class="text subscription__text">Присоединяйтесь к чат-ботам Магнит Доставки в Telegram и Viber и получайте
+            персональные предложения, сочные промокоды и
+            другие плюшки.</p>
+
+          <div class="notifications-wrapper">
+            <div class="notification notification__telegram">
+              <div class="notification__header notification__header--telegram ">
+                <div class="notification__logo notification__logo--telegram">
+                  <svg width="19" height="14">
+                    <use xlink:href="./assets/icons/telegram-icon.svg#telegram-icon"></use>
+                  </svg>
+                  <span class="notification__label">Telegram</span>
+                </div>
+                <span class="notification__time">5 мин</span>
+              </div>
+              <h3 class="notification__title notification__title--telegram">А вот и ваш промокод 😉️</h3>
+              <p class="notification__text notification__text--telegram">Успейте сделать заказ в Магнит Доставке со
+                скидкой 35%</p>
+            </div>
+
+            <div class="notification notification__viber">
+              <div class="notification__header notification__header--viber ">
+                <div class="notification__logo notification__logo--viber">
+                  <svg width="17" height="19">
+                    <use xlink:href="./assets/icons/viber-icon.svg#viber-icon"></use>
+                  </svg>
+                  <span class="notification__label">Viber</span>
+                </div>
+                <span class="notification__time">10 мин</span>
+              </div>
+              <h3 class="notification__title notification__title--viber">Скидки до 50% 🥤</h3>
+              <p class="notification__text notification__text--viber">Заказывайте напитки и снеки с доставкой на дом</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subscription-bottom">
+          <div class="btns-holder subscription__btns-holder">
+            <button class="social-btn social-btn--telegram subscription__social-btn" type="button">Telegram</button>
+            <button class="social-btn social-btn--viber subscription__social-link" type="button">Viber</button>
+          </div>
+
+          <div class="qr">
+            <div class="qr-box">
+              <div class="qr-box__img-holder">
+                <img class="qr-box__img" src="./assets/img/telegram-qr.png" alt="QR-code of telegram.">
+              </div>
+              <p class="qr-box__label">Наведите камеру чтобы перейти в Telegram</p>
+            </div>
+            <div class="qr-box">
+              <div class="qr-box__img-holder">
+                <img class="qr-box__img" src="./assets/img/viber-qr.png" alt="QR-code of viber.">
+              </div>
+              <p class="qr-box__label">Наведите камеру чтобы перейти в Viber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrapper about__wrapper">
+        <div class="about__slogan">
+          <img class="about__slogan-img" src="./assets/img/slogan-about.png" alt="Все важное с доставкой.">
+        </div>
+        <div class="about__logo">
+          <svg width="144" height="36">
+            <use xlink:href="./assets/icons/footer-logo-desktop.svg#footer-logo-desktop"></use>
+          </svg>
+        </div>
+        <div class="about__logo-mobile">
+          <svg width="33" height="36">
+            <use xlink:href="./assets/icons/footer-logo-mobile.svg#footer-logo-mobile"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <nav class="footer-nav">
+        <a href="#" class="footer-nav__link">Информация о компании</a>
+        <a href="#" class="footer-nav__link">Контакты</a>
+        <a href="#" class="footer-nav__link">Правовая информация</a>
+      </nav>
+      <p class="footer__copyrights">Предложение действует только для покупателей, совершающих покупки в приложении
+        Магнит Доставка, на территории действия
+        сервиса Магнит Доставка.<br>
+        Предложения персональные и доступны только получателям рассылок. Полные условия программы опубликованы на <a
+          href="#" class="footer__copyrights-link">magnit.ru/dostavka.</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
