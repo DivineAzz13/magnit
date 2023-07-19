@@ -14,6 +14,16 @@ $vbColor: #7360f2;
 $white: #fff;
 $grey: #777;
 $qrColor: #717171;
+$hoverTg: #229ed9;
+$hoverVb: #4e4879;
+
+@mixin click() {
+	cursor: pointer;
+	transition: 0.13s;
+	&:active {
+		transform: translateY(2px);
+	}
+}
 
 body {
 	font-family: $mainFont;
@@ -84,10 +94,20 @@ body {
 	border-radius: 12px;
 
 	&--telegram {
-		background-color: $tgColor;	
+		background-color: $tgColor;
+		&:hover {
+			cursor: pointer;
+			background-color: $hoverTg;
+		}
+		@include click();
 	}
 	&--viber {
 		background-color: $vbColor;
+		&:hover {
+			cursor: pointer;
+			background-color: $hoverVb;
+		}
+		@include click();
 	}
 }
 
@@ -146,7 +166,6 @@ body {
 			font-size: 16px;
 			line-height: 22px;
 			margin-bottom: 24px;
-			
 		}
 	}
 
@@ -155,10 +174,9 @@ body {
 		align-items: center;
 		gap: 18px;
 	}
-
-	&__social-btn {
-	}
 }
+
+// PROMO
 
 .promo {
 	margin-bottom: 50px;
@@ -179,26 +197,9 @@ body {
 			gap: 57px;
 		}
 	}
-
-	// &__nav {
-	// 	width: 100%;
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-	// 	align-items: center;
-	// 	justify-content: center;
-	// 	gap: 30px;
-
-	// 	@media (max-width: 992px) {
-	// 		flex-direction: column;
-	// 		gap: 57px;
-	// 	}
-	// }
-
-	&__box{
-	}
 }
 
-.promo-box{
+.promo-box {
 	position: relative;
 	width: 100%;
 	max-width: 370px;
@@ -290,12 +291,6 @@ body {
 			flex-direction: column;
 		}
 	}
-
-	&__social-btn {
-	}
-
-	&__social-link {
-	}
 }
 
 .subscription-top {
@@ -313,6 +308,10 @@ body {
 	@media (max-width: 500px) {
 		padding-top: 63px;
 		min-height: 610px;
+		background-image: url("../assets/img/phone-bg.png");
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 }
 
@@ -344,9 +343,6 @@ body {
 		margin-bottom: 7px;
 	}
 
-	&__header--telegram {
-	}
-
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -359,9 +355,6 @@ body {
 
 	&__logo--telegram {
 		color: $tgColor;
-	}
-
-	&__label {
 	}
 
 	&__time {
@@ -402,17 +395,11 @@ body {
 		line-height: 20px;
 	}
 
-	&__text--telegram {
-	}
-
 	&__viber {
 		min-height: 111px;
 		background: linear-gradient(180deg, #f4f2ff 0%, #ddd8fd 100%);
 		box-shadow: 0px 0px 15.302255630493164px 0px rgba(0, 0, 0, 0.14);
 		padding-top: 9px;
-	}
-
-	&__header--viber {
 	}
 
 	&__logo--viber {
@@ -421,9 +408,6 @@ body {
 
 	&__title--viber {
 		line-height: 21.271px;
-	}
-
-	&__text--viber {
 	}
 }
 
@@ -472,6 +456,7 @@ body {
 		background-color: $white;
 		border-radius: 20px;
 	}
+
 	&__img {
 		width: 100%;
 		height: 100%;
@@ -498,14 +483,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: contain;
 	@media (max-width: 992px) {
-    background-position: bottom 15px left 70px;
-    background-size: 79%;
+		background-position: bottom 15px left 70px;
+		background-size: 79%;
 	}
 	@media (max-width: 500px) {
 		padding: 0;
 		padding-top: 30px;
 		background-position: left 6px bottom 13px;
-    background-size: 94%;
+		background-size: 94%;
 	}
 
 	&__wrapper {
@@ -564,10 +549,9 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
-		@media(max-width: 500px) {
+		@media (max-width: 500px) {
 			padding-top: 30px;
 			gap: 22px;
-
 		}
 	}
 
@@ -604,5 +588,8 @@ body {
 		font-style: normal;
 		font-weight: 500;
 		line-height: 24px;
+		&:hover {
+			color: $grey;
+		}
 	}
 }

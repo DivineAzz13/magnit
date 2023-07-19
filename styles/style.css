@@ -238,9 +238,27 @@ body {
 }
 .social-btn--telegram {
   background-color: #2aabee;
+  cursor: pointer;
+  transition: 0.13s;
+}
+.social-btn--telegram:hover {
+  cursor: pointer;
+  background-color: #229ed9;
+}
+.social-btn--telegram:active {
+  transform: translateY(2px);
 }
 .social-btn--viber {
   background-color: #7360f2;
+  cursor: pointer;
+  transition: 0.13s;
+}
+.social-btn--viber:hover {
+  cursor: pointer;
+  background-color: #4e4879;
+}
+.social-btn--viber:active {
+  transform: translateY(2px);
 }
 
 .header {
@@ -314,6 +332,7 @@ body {
   align-items: center;
   gap: 18px;
 }
+
 .promo {
   margin-bottom: 50px;
 }
@@ -336,6 +355,7 @@ body {
     gap: 57px;
   }
 }
+
 .promo-box {
   position: relative;
   width: 100%;
@@ -433,6 +453,7 @@ body {
     flex-direction: column;
   }
 }
+
 .subscription-top {
   width: 100%;
   min-height: 636px;
@@ -450,6 +471,10 @@ body {
   .subscription-top {
     padding-top: 63px;
     min-height: 610px;
+    background-image: url("../assets/img/phone-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -536,6 +561,7 @@ body {
 .notification__title--viber {
   line-height: 21.271px;
 }
+
 .subscription-bottom {
   background-color: #fff3da;
   min-height: 338px;
@@ -719,4 +745,7 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+.footer-nav__link:hover {
+  color: #777;
 }/*# sourceMappingURL=style.css.map */
