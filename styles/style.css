@@ -169,6 +169,11 @@ a {
 body {
   font-family: "Magnit Sans", sans-serif;
   background-color: #fff;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 360px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 * {
